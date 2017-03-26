@@ -1,0 +1,23 @@
+mở VS code
+nhấn ctrl + shift + p
+gõ git clone
+paste link vào
+chọn chỗ lưu git repo
+xong chờ n tải về, mở lên
+(Cũng có thể dùng cách truyền thống dùng cmd, sau mở folder)
+sử dụng git này phải mở theo kiểu mở folder, có thể ấn chuột phải vào folder, chọn open with VS code, hoặc trong vs code chọn file->open folder
+
+
+
+sửa trực tiếp vào repo này luôn
+
+
+-commit và up
+Nếu có chỉnh sửa chưa commit, tab git sẽ hiện số file đã sửa, ấn vào sẽ thấy những thay đổi(cái nút thứ ba bên trái, dưới nút tìm kiếm)
+gõ nội dung commit(nếu k biết gõ gì thì gõ tên vào cũng đc)
+ấn ctrl+enter để commit
+ấn vào nút ... ở góc trên, chọn push to
+gõ origin hoặc chọn origin là đc
+
+
+-- dùng cái này up code cho nhanh, vs lại quản lý đc phiên bản, đỡ phải up lên drive, cũng đồng bộ đc vs nhau dễ hơn
