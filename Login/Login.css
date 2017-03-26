@@ -1,0 +1,64 @@
+.text-center {
+            color: darkgreen;
+            margin: 100px;
+            margin-bottom: 50px;
+            text-align: center;
+            position: relative;
+            left: 30px;
+            font-family: Helvetica, sans-serif;
+            font-size: 30px;
+        }
+        
+        .checkbox {
+            position: relative;
+            left: 100px;
+            top: 20px;
+        }
+        
+        #button {
+            position: relative;
+            left: 100px;
+            border-radius: 5px;
+            background-color: green;
+            color: #FFF;
+            border-color: rgb(91, 189, 43);
+            padding: 10px 25px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+        
+        .text {
+            text-align: center;
+            margin-top: 110px;
+            color: darkgreen;
+            margin-bottom: 50px;
+        }
+
+        .notification {
+            color: red;
+            text-align: center;
+            font-size: 15px;
+        }
+        
+        .icon-facebook,
+        .icon-google {
+            margin-left: 200px;
+            margin-top: 150px;
+        }
+
+        .icon-google {
+            margin-top: 0;
+        }
+        
+        .icon-facebook img {
+            width: 300px;
+            height: 60px;
+            position: relative;
+            right: 75px;
+        }
+        
+        .icon-google img {
+            width: 300px;
+            position: relative;
+            right: 75px;
+        }
