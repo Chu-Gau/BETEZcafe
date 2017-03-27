@@ -19,14 +19,19 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="../css/style.css">
+
     <link rel="stylesheet" href="Login.css">     
 </head>
 
 <body>
+    <?php
+         require('../modules/header.php')
+    ?>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <div class="row">
+                <!--<div class="row">
                     <nav class="navbar navbar-inverse">
                         <div class="container-fluid">
                             <div class="navbar-header">
@@ -45,7 +50,7 @@
                             </ul>
                         </div>
                     </nav>
-                </div>
+                </div>-->
                 <div class="row">
                     <div class="col-md-2">
                     </div>
@@ -103,10 +108,10 @@
                         </form> 
                         
                         <!-- link đến file quên mật khẩu -->
-                        <a href="ForgotPassword.html" class="btn btn-link btn-block" type="button">Quên mật khẩu?</a> 
+                        <a href="ForgotPassword.php" class="btn btn-link btn-block" type="button">Quên mật khẩu?</a> 
                         
                         <!-- link đến file đăng kí tài khoản -->
-                        <a href="#" class="btn btn-link btn-block" type="button">Chưa có tài khoản? Click vào đây để tạo tài khoản miễn phí!!!!!</a>
+                        <a href="../register" class="btn btn-link btn-block" type="button">Chưa có tài khoản? Click vào đây để tạo tài khoản miễn phí!!!!!</a>
                     
                     </div>
                     <div class="col-md-5">

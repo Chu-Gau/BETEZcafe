@@ -27,7 +27,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <div class="row">
+                <!--<div class="row">
                     <nav class="navbar navbar-inverse">
                         <div class="container-fluid">
                             <div class="navbar-header">
@@ -46,7 +46,10 @@
                             </ul>
                         </div>
                     </nav>
-                </div>
+                </div>-->
+                <?php
+                     require('../modules/header.php');
+                ?>
                 <div class="row">
                     <div class="col-md-3">
                     </div>

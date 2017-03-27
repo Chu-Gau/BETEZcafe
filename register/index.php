@@ -42,11 +42,13 @@
 </head>
 
 <body>
-    
-    <div class="container-fluid">
-        <div class="row">
+    <?php
+         require('../modules/header.php')
+    ?>
+    <!--<div class="container-fluid">
+        <div class="row">-->
             <!--nav-->
-            <nav class="navbar navbar-inverse">
+            <!--<nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">BETEZ Café</a>
@@ -63,10 +65,10 @@
                         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     </ul>
                 </div>
-            </nav>
+            </nav>-->
             <!--end nav-->
-        </div>
-    </div>
+        <!--</div>
+    </div>-->
 
     <div class="container">
         <div class="row">
