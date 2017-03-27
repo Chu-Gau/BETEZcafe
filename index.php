@@ -8,10 +8,10 @@
     <title>BETEZ Café</title>
     <!--icon-->
     <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Latest compiled and minified CSS -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
     <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div id="menu">
-                <div class="menu-header">
+                <div class="menu-header container">
                     <img src="images/menu-header.png" alt="">
                     <p>Menu</p>
                     <img src="images/menu-header.png" alt="">
@@ -97,6 +97,7 @@
                                 <script>$(document).ready(function () {
                                     $('.cart').fadeIn();
                                     $('.cart-product').show();
+                                    $('.container').animate({left: '-=75px'}, 200);
                                 });</script>
                             <?php
                                 require_once('app/database.php');

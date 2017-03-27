@@ -1,14 +1,26 @@
-<div class="navbar">
-    <div class="container">
-        <div id="logo"><a href="#">BETEZ Café</a></div>
-        <nav>
-            <ul>
-                <li><a href="#menu">MENU</a></li>
-                <li><a href="#">KHUYẾN MÃI</a></li>
-                <li><a href="#">ĐỊA ĐIỂM</a></li>
-                <li><a href="#">GIỚI THIỆU</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="login-button"><a href="login">Đăng nhập</a></div>
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <nav class="navbar navbar-inverse">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#">BETEZ Café</a>
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#menu">Menu</a></li>
+                                <li><a href="#">Khuyến mãi</a></li>
+                                <li><a href="#">Địa điểm</a></li>
+                                <li><a href="#">Giới thiệu</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="localhost:8080/betez/register"><span class="glyphicon glyphicon-user"></span> Đăng kí</a></li>
+                                <li><a href="localhost:8080/betez/login"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
 </div>
