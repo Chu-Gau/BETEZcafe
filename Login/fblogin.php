@@ -40,7 +40,7 @@
     echo "Welcome ". $user->name ."!";
 
     //lưu dữ liệu vào database
-    require_once('database.php');
+    require_once('../app/database.php');
     $sql = "insert into users(username, admin) values('$user->name', 0) ";
     mysqli_query($conn, $sql);
     
