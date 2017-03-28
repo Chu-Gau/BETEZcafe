@@ -38,6 +38,11 @@
     
     //demo in ra tên người đăng nhập
     echo "Welcome ". $user->name ."!";
+
+    //lưu dữ liệu vào database
+    require_once('database.php');
+    $sql = "insert into users(username, admin) values('$user->name', 0) ";
+    mysqli_query($conn, $sql);
     
     // điều hướng về trang chủ
     header('location: ../');
