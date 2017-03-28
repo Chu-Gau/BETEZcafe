@@ -34,7 +34,7 @@
     $user = json_decode($response);
     // Log user in
     $_SESSION['user_login'] = true;
-    $_SESSION['user_name'] = $user->name;
+    $_SESSION['username'] = $user->name;
     
     //demo in ra tên người đăng nhập
     echo "Welcome ". $user->name ."!";

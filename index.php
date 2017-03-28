@@ -27,7 +27,7 @@
 
 <body>
     <?php
-         session_start();
+        //  session_start();
     ?>
         <?php
          require_once('modules/header.php');
@@ -110,7 +110,7 @@
                         </div>
                         <!--end ordered products-->
                         <div class="cart-button">
-                            <a href="modules/checkout.html" class=""><span>Thanh toán</span>🛒</a>
+                            <a href="checkout" class=""><span>Thanh toán</span>🛒</a>
                         </div>
                     </div>
                 </div>

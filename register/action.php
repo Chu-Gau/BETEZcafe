@@ -1,6 +1,6 @@
     <?php
     session_start();
-    require_once("database.php");
+    require_once("../app/database.php");
     if (isset($_POST["button"])) {
 		//lấy thông tin từ các form bằng phương thức POST
 		// $username = $_POST["user_name"];
@@ -12,14 +12,20 @@
         $phone_number = $_POST["phone_number"];
         $address = $_POST["address"];
         $username = $first_name." ".$last_name;
+        $accept = $_POST["accept"];
 		//Kiểm tra điều kiện bắt buộc đối với các field không được bỏ trống
-		if ($username == "" || $password == "" || $address == "" || $email == ""||$confirm_password == "") {
-			$_SESSION['notif']='bạn vui lòng nhập đầy đủ thông tin';                    header('location: action.php');
+		if ($username == "" || $password == "" || $email == ""||$confirm_password == "") {
+			$_SESSION['notif']='Bạn vui lòng nhập đầy đủ thông tin';                    
+            header('location: ../register');
 
 		}
         elseif($password!=$confirm_password) {
-            $_SESSION['notif']='mật khẩu không khớp';
-                    header('location: action.php');
+            $_SESSION['notif']='Mật khẩu không khớp';
+                    header('location: ../register');
+        }
+        elseif($accept != 'checked'){
+            $_SESSION['notif']='Bạn phải đồng ý với tất cả các điều khoản!';
+            header('location: ../register');
         }
         else{
   				// Kiểm tra tài khoản đã tồn tại chưa
@@ -28,13 +34,13 @@
  
 				    if($kt->num_rows  > 0){
 					$_SESSION['notif']= 'Tài khoản đã tồn tại';
-                    header('location: action.php');
+                    header('location: ../register');
 				}
                 else{
                     $sql = "INSERT INTO `users`(`username`, `email`, `password`, `addresses`, `phonenumber`) VALUES ('$username', '$email', '$password', '$address', '$phone_number')";
                     mysqli_query($conn,$sql);
                     // die($sql);
-				   	$_SESSION['notif']= 'chúc mừng bạn đã đăng ký thành công';
+				   	$_SESSION['notif']= 'Chúc mừng bạn đã đăng ký thành công';
                     header('location: ../login');
                 }
         }

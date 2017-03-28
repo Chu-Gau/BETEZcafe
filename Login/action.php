@@ -25,7 +25,8 @@
                 header('location: index.php');
             }
             else if ($num_rows == 1) {
-                $_SESSION['username'] = $user_name;
+                $query = $query->fetch_assoc();
+                $_SESSION['username'] = $query['username'];
                 echo "Đăng nhập thành công!!! Đang chuyển hướng về trang chủ.....";
 
                 // chuyến hướng về trang chủ

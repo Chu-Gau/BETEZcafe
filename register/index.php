@@ -74,7 +74,7 @@
         <div class="row">
 
             <div class="col-md-8 col-md-offset-2">
-                <form role="form" method="POST" action="../app/register_action.php">
+                <form role="form" method="POST" action="action.php">
                     <legend class="text-center">Đăng kí tài khoản</legend>
 
                     <p class = 'reg-err' style="color:red;"><?php
@@ -149,7 +149,7 @@
                         <div class="col-md-12">
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" value="" id="">
+                                    <input type="checkbox" value="checked" id="" name = 'accept'>
                                     Tôi đồng ý với tất cả <a href="#">các điều khoản</a>.
                                 </label>
                             </div>

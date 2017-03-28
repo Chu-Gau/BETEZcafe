@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require_once('database.php');
+    require_once('../app/database.php');
     if (isset($_POST['button-submit'])) {
         $email = $_POST['email'];
         if ($email == '') {
