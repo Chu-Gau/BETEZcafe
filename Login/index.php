@@ -125,7 +125,7 @@
                         <div class="icon-google">
 
                             <!-- link đến file đăng kí bằng google -->
-                            <a href="http://localhost/test/gglogin.php" target="blank">
+                            <a href="http://localhost:8080/betez/login/gglogin.php" target="blank">
                                 <img alt="Sign in with Google" src="http://i.imgur.com/ujkvOCz.png" />
                             </a>
                         </div>
