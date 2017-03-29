@@ -186,15 +186,76 @@ rel="stylesheet">
             echo"</table>";
             ?>
             </div>
+            <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-6">
+			<form role="form" name = 'Form'>
+				<div class="form-group">
+					 
+					<label for="name">
+						Họ và tên
+					</label>
+					<input type="text" class="form-control" name="name"/>
+				<div class="form-group">
+					 
+					<label for="phonenumber">
+						Số điện thoại
+					</label>
+					<input type="text" class="form-control" name="phonenumber" />
+				<div class="form-group">
+					 
+					<label for="address">
+						Địa chỉ
+					</label>
+					<input type="text" class="form-control" name="address" />
+				</div>
+			</form>
+		</div>
+		<div class="col-md-3">
+		</div>
+	</div>
+</div>
             <div class="row">
                 <div class="col-md-8"></div>
                 <div class="col-md-4">
                     <a href="../"><button type="button" class="btn btn-primary btn-md">Mua tiếp</button></a>
-                    <a href="#"><button type="button" class="btn btn-success">Thanh toán</button></a>
+                    <a href="#"><button type="button" onclick="checkout()" class="btn btn-success">Thanh toán</button></a>
                 </div>
             </div>
         </div>
+<script>
+    function checkout(){
+        var name = document.forms['Form'].name.value;
+        var phonenumber = document.forms['Form'].phonenumber.value;
+        var address = document.forms['Form'].address.value;
+        if(name == ""){
+            alert('Xin vui lòng nhập đầy đủ họ tên!');
+        }
+        else if(phonenumber == ""){
+            alert('Xin vui lòng nhập số điện thoại!');
+        }
+        else if(address == ""){
+            alert('Xin vui lòng nhập địa chỉ!');
+        }
+        else{
+            //use ajax to send order
+            $.ajax({
+            url: "js/checkout.php",
+            type: "post",
+			data:"name"+'='+name+"&phonenumber"+'='+phonenumber+"&address"+'='+address,
+			async:true,
+            success: function (data) {
+                // alert(data);
+            }
+        });
+            alert('Thanh toán thành công! Chúng tôi sẽ giao hàng cho bạn nhanh nhất có thể. Cám ơn đã sử dụng dịch vụ của chúng tôi :) !');
+            window.location.replace("../");
+        }
+    }
 
+</script>
         <!--footer-->
             <!--<br>
             <div class="footer">
