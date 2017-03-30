@@ -17,6 +17,6 @@ Xây dựng một website đơn giản giúp khách hàng có thể mua đồ u�
 www.caferio.com, pizzahut.com
 
 ### Sơ đồ Usecase
-![](UsecaseDiagram.jpg)
+![](UsecaseDiagram.JPG)
 
 [Cucumber Features](usecase.feature)
