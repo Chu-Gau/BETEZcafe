@@ -9,8 +9,9 @@ Feature: xem mặt hàng
     
     Scenario: order a drink
         Given I'm reading the menu
-        Then I can order some drinks
-        And I should be given a sign so that I know that I have ordered successful
+        And I see "coca"
+        When I click on "coca"
+        Then I should see the cart having 1
 
 Feature: checkout
     In order to checkout
