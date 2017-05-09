@@ -32,7 +32,7 @@
                             ?>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="http://localhost:8080/betez/register"><span class="glyphicon glyphicon-user"></span> Đăng kí</a></li>
-                                <li><a href="http://localhost:8080/betez/login"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+                                <li><a id = "Login" href="http://localhost:8080/betez/login"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
                             </ul>
                             <?php
                                  }

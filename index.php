@@ -51,6 +51,7 @@
                 </div>
                 <div class="menu-content container clearfix">
                     <!--products-->
+                    <button id = "abc"></button>
                     <?php
                 require_once('app/database.php');
                 $products = $conn->query("SELECT * FROM products");
@@ -58,7 +59,7 @@
                 ?>
                         <div class="product">
                             <div class="product-thumbnail" style="background-image: url('images/products/<?php echo $product['thumbnaillinks']; ?>')">
-                                <button class="thumbnail-overlay" onclick="add_cart(<?php echo $product['index']; ?>)">
+                                <button class="thumbnail-overlay" name="<?php echo $product['index']; ?>" onclick="add_cart(<?php echo $product['index']; ?>)">
                                 <p>
                                     Đặt hàng
                                 </p>
@@ -110,7 +111,7 @@
                         </div>
                         <!--end ordered products-->
                         <div class="cart-button">
-                            <a href="checkout" class=""><span>Thanh toán</span>🛒</a>
+                            <a  id="checkout" title = "checkout" href="checkout" class=""><span>Thanh toán</span>🛒</a>
                         </div>
                     </div>
                 </div>
