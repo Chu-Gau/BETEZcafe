@@ -24,8 +24,7 @@
                                 <li><a href="http://localhost:8080/betez">Home</a></li>
                                 <li><a href="#menu">Menu</a></li>
                                 <li><a href="#">Khuyến mãi</a></li>
-                                <li><a href="#">Địa điểm</a></li>
-                                <li><a href="#">Giới thiệu</a></li>
+                                <li><a href="http://localhost:8080/betez/info">Liên Hệ</a></li>
                             </ul>
                             <?php
                                  if(!isset($_SESSION['username'])){
@@ -53,3 +52,13 @@
             </div>
         </div>
 </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98844487-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
