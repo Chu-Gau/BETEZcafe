@@ -116,7 +116,7 @@
                     </div>
                     <div class="col-md-5">
                         <div class="icon-facebook">
-                            <a href="https://www.facebook.com/dialog/oauth?client_id=536643483177466&redirect_uri=http://localhost:8080/betez/login/fblogin.php&scope=public_profile" target="blank">
+                            <a href="https://www.facebook.com/dialog/oauth?client_id=536643483177466&redirect_uri=http://betezcafe.herokuapp.com/login/fblogin.php&scope=public_profile" target="blank">
                                 <img alt="Login with Facebook" src="http://i.imgur.com/959OX3J.png" />
                             </a>
                         </div>
@@ -125,7 +125,7 @@
                         <div class="icon-google">
 
                             <!-- link đến file đăng kí bằng google -->
-                            <a href="http://localhost:8080/betez/login/gglogin.php" target="blank">
+                            <a href="http://betezcafe.herokuapp.com/login/gglogin.php" target="blank">
                                 <img alt="Sign in with Google" src="http://i.imgur.com/ujkvOCz.png" />
                             </a>
                         </div>
