@@ -22,8 +22,8 @@
                             </div>
                             <ul class="nav navbar-nav">
                                 <li><a href="http://localhost:8080/betez">Home</a></li>
-                                <li><a href="#menu">Menu</a></li>
-                                <li><a href="#">Khuyến mãi</a></li>
+                                <li><a href="http://localhost:8080/betez#menu">Menu</a></li>
+                                <li><a href="http://localhost:8080/betez/khuyen_mai">Khuyến mãi</a></li>
                                 <li><a href="http://localhost:8080/betez/info">Liên Hệ</a></li>
                             </ul>
                             <?php
