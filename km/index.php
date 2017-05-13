@@ -15,26 +15,9 @@ rel="stylesheet">
 
 </head>
 <body>
-<div id="container">
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">BETEZ Café</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#">Khuyến mãi</a></li>
-                <li><a href="#">Địa điểm</a></li>
-                <li><a href="#">Giới thiệu</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng xuất</a></li>
-            </ul>
-        </div>
-    </nav>
-</div>
-
+<?php
+    require("../modules/header.php");
+?>
 <div class='main-container'>
     <div class='main'>
         <div class="cate">

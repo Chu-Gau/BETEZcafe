@@ -5,7 +5,7 @@ $google_client_secret 	= 'G9W7sna4jwehnIYV8LOfQqkc';
 
 // Trả về trang này sau khi đăng nhập thành công
 // Tạm thời sử dụng trang login để test
-$google_redirect_url 	= 'http://betezcafe.herokuapp.com/Login'; 
+$google_redirect_url 	= 'http://localhost:8080/betez/Login'; 
 
 $google_developer_key 	= 'AIzaSyAJeqGi666kT1eW3C6afXVlaNIlDRjJaDM';
 require_once 'login-with-google/Google/Google_Client.php';
