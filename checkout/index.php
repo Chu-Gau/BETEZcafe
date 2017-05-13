@@ -250,6 +250,7 @@ rel="stylesheet">
                 // alert(data);
             }
         });
+            confirm('Hãy chắc chắn rằng bạn đã chọn đủ hàng theo yêu cầu và nhập thông tin chính xác. Sau khi chọn OK, đơn hàng sẽ được gửi đi. Bạn có muốn đặt hàng?');
             alert('Thanh toán thành công! Chúng tôi sẽ giao hàng cho bạn nhanh nhất có thể. Cám ơn đã sử dụng dịch vụ của chúng tôi :) !');
             window.location.replace("../");
         }
