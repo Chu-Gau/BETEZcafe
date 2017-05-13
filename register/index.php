@@ -174,7 +174,7 @@
                             <button type="submit" class="btn btn-success" name="button">
                                 Đăng kí
                             </button>
-                            <div class="fb-comments" data-href="http://betez.ml" data-colorscheme="light" data-numposts="5" data-width="500"></div>
+                            <!--<div class="fb-comments" data-href="http://betez.ml" data-colorscheme="light" data-numposts="5" data-width="500"></div>-->
 
                         </div>
                     </div>
