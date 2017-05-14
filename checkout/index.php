@@ -198,12 +198,15 @@ rel="stylesheet">
 						Họ và tên
 					</label>
 					<input type="text" class="form-control" name="name" value="<?php
+                    $loggedIn = false;
                         if(isset($_SESSION['userid'])){
                             $query = "SELECT * FROM `users` WHERE `userid` = ".$_SESSION['userid'];
                             $result= $conn->query($query);          
                             $data=mysqli_fetch_assoc($result);
                             // var_dump($data);
-                            echo $data['fullname'];
+                            $loggedIn = true;
+                        }
+                            if($loggedIn)echo $data['fullname'];
                     ?>"/>
 				<div class="form-group">
 					 
@@ -211,7 +214,7 @@ rel="stylesheet">
 						Số điện thoại
 					</label>
 					<input type="text" class="form-control" name="phonenumber" value="<?php
-                        echo $data['phonenumber'];
+                        if($loggedIn)echo $data['phonenumber'];
                     ?>"/>
 				<div class="form-group">
 					 
@@ -219,8 +222,8 @@ rel="stylesheet">
 						Địa chỉ
 					</label>
 					<input type="text" class="form-control" name="address" value="<?php
-                        echo $data['addresses'];
-                        }
+                        if($loggedIn)echo $data['addresses'];
+                        
                     ?>"/>
 				</div>
 			</form>
@@ -252,19 +255,21 @@ rel="stylesheet">
             alert('Xin vui lòng nhập địa chỉ!');
         }
         else{
-            //use ajax to send order
-            $.ajax({
-            url: "js/checkout.php",
-            type: "post",
-			data:"name"+'='+name+"&phonenumber"+'='+phonenumber+"&address"+'='+address,
-			async:true,
-            success: function (data) {
-                alert(data);//
-                confirm('Hãy chắc chắn rằng bạn đã chọn đủ hàng theo yêu cầu và nhập thông tin chính xác. Sau khi chọn OK, đơn hàng sẽ được gửi đi. Bạn có muốn đặt hàng?');
-                alert('Thanh toán thành công! Chúng tôi sẽ giao hàng cho bạn nhanh nhất có thể. Cám ơn đã sử dụng dịch vụ của chúng tôi :) !');
-                window.location.replace("../");
+            if(confirm('Hãy chắc chắn rằng bạn đã chọn đủ hàng theo yêu cầu và nhập thông tin chính xác. Sau khi chọn OK, đơn hàng sẽ được gửi đi. Bạn có muốn đặt hàng?')){
+                //use ajax to send order
+                $.ajax({
+                    url: "js/checkout.php",
+                    type: "post",
+                    data:"name"+'='+name+"&phonenumber"+'='+phonenumber+"&address"+'='+address,
+                    async:true,
+                    success: function (data) {
+                        alert(data);//
+                        alert('Thanh toán thành công! Chúng tôi sẽ giao hàng cho bạn nhanh nhất có thể. Cám ơn đã sử dụng dịch vụ của chúng tôi :) !');
+                        window.location.replace("../");
+                    }
+                });
             }
-        });
+            
         }
     }
 
