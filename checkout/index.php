@@ -197,19 +197,31 @@ rel="stylesheet">
 					<label for="name">
 						Họ và tên
 					</label>
-					<input type="text" class="form-control" name="name"/>
+					<input type="text" class="form-control" name="name" value="<?php
+                        if(isset($_SESSION['userid'])){
+                            $query = "SELECT * FROM `users` WHERE `userid` = ".$_SESSION['userid'];
+                            $result= $conn->query($query);          
+                            $data=mysqli_fetch_assoc($result);
+                            // var_dump($data);
+                            echo $data['fullname'];
+                    ?>"/>
 				<div class="form-group">
 					 
 					<label for="phonenumber">
 						Số điện thoại
 					</label>
-					<input type="text" class="form-control" name="phonenumber" />
+					<input type="text" class="form-control" name="phonenumber" value="<?php
+                        echo $data['phonenumber'];
+                    ?>"/>
 				<div class="form-group">
 					 
 					<label for="address">
 						Địa chỉ
 					</label>
-					<input type="text" class="form-control" name="address" />
+					<input type="text" class="form-control" name="address" value="<?php
+                        echo $data['addresses'];
+                        }
+                    ?>"/>
 				</div>
 			</form>
 		</div>
@@ -247,12 +259,12 @@ rel="stylesheet">
 			data:"name"+'='+name+"&phonenumber"+'='+phonenumber+"&address"+'='+address,
 			async:true,
             success: function (data) {
-                // alert(data);
+                alert(data);//
+                confirm('Hãy chắc chắn rằng bạn đã chọn đủ hàng theo yêu cầu và nhập thông tin chính xác. Sau khi chọn OK, đơn hàng sẽ được gửi đi. Bạn có muốn đặt hàng?');
+                alert('Thanh toán thành công! Chúng tôi sẽ giao hàng cho bạn nhanh nhất có thể. Cám ơn đã sử dụng dịch vụ của chúng tôi :) !');
+                window.location.replace("../");
             }
         });
-            confirm('Hãy chắc chắn rằng bạn đã chọn đủ hàng theo yêu cầu và nhập thông tin chính xác. Sau khi chọn OK, đơn hàng sẽ được gửi đi. Bạn có muốn đặt hàng?');
-            alert('Thanh toán thành công! Chúng tôi sẽ giao hàng cho bạn nhanh nhất có thể. Cám ơn đã sử dụng dịch vụ của chúng tôi :) !');
-            window.location.replace("../");
         }
     }
 

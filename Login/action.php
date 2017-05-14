@@ -27,6 +27,7 @@
             else if ($num_rows == 1) {
                 $query = $query->fetch_assoc();
                 $_SESSION['username'] = $query['username'];
+                $_SESSION['userid'] = $query['userid'];
                 echo "Đăng nhập thành công!!! Đang chuyển hướng về trang chủ.....";
 
                 // chuyến hướng về trang chủ
