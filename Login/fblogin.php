@@ -33,7 +33,6 @@
     
     $user = json_decode($response);
     // Log user in
-    $_SESSION['user_login'] = true;
     $_SESSION['username'] = $user->name;
     
     //demo in ra tên người đăng nhập
@@ -41,8 +40,10 @@
 
     //lưu dữ liệu vào database
     require_once('../app/database.php');
-    $sql = "insert into users(username, admin) values('$user->name', 0) ";
+    $sql = "INSERT into users(`username`, `email`, `admin`) values('$user->name', '$user->id', 0) ";
     mysqli_query($conn, $sql);
+    $data = mysqli_query($conn, "SELECT userid from users where email = '$user->id'");
+    $_SESSION['userid'] = $data->fetch_assoc()["userid"];
     
     // điều hướng về trang chủ
     header('location: ../');

@@ -26,12 +26,20 @@
             }
             else if ($num_rows == 1) {
                 $query = $query->fetch_assoc();
+                if ($query['admin']) {
+                    $_SESSION['admin'] = true;
+                    $_SESSION['username'] = 'Admin';
+                    $_SESSION['userid'] = $query['userid'];
+                    header('location: ../admin');
+                }
+                else{
                 $_SESSION['username'] = $query['username'];
                 $_SESSION['userid'] = $query['userid'];
                 echo "Đăng nhập thành công!!! Đang chuyển hướng về trang chủ.....";
 
                 // chuyến hướng về trang chủ
                 header('location: ../');
+                }
             }
         }
     }
