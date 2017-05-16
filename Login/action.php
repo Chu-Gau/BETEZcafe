@@ -38,7 +38,7 @@
                 echo "Đăng nhập thành công!!! Đang chuyển hướng về trang chủ.....";
 
                 // chuyến hướng về trang chủ
-                header('location: ../');
+                header('location: ..//');
                 }
             }
         }

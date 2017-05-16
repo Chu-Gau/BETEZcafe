@@ -95,7 +95,7 @@
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
 
-                                    <button type="submit" class="btn btn-default" id="button" name='button-submit'>
+                                    <button type="submit" class="btn btn-default" id="loginbutton" name='button-submit'>
 									Đăng nhập 
 								</button>
                                 </div>

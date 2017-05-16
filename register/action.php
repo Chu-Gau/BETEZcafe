@@ -1,7 +1,7 @@
     <?php
     session_start();
     require_once("../app/database.php");
-    if (isset($_POST["button"])) {
+    if (isset($_POST["registerbutton"])) {
 		//lấy thông tin từ các form bằng phương thức POST
 		// $username = $_POST["user_name"];
 		$password = $_POST["password"];
@@ -40,7 +40,7 @@
                     $sql = "INSERT INTO `users`(`username`, `email`, `password`, `addresses`, `phonenumber`) VALUES ('$username', '$email', '$password', '$address', '$phone_number')";
                     mysqli_query($conn,$sql);
                     // die($sql);
-				   	$_SESSION['notif']= 'Chúc mừng bạn đã đăng ký thành công';
+				   	$_SESSION['notif']= '';
                     header('location: ../login');
                 }
         }

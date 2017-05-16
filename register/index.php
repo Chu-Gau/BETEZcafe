@@ -162,7 +162,7 @@
                         <div class="col-md-12">
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" value="checked" id="" name = 'accept'>
+                                    <input type="checkbox" value="checked" id="termaccept" name = 'accept'>
                                     Tôi đồng ý với tất cả <a href="#">các điều khoản</a>.
                                 </label>
                             </div>
@@ -171,10 +171,10 @@
 
                     <div class="form-group">
                         <div class="col-md-12">
-                            <button type="submit" class="btn btn-success" name="button">
+                            <button type="submit" class="btn btn-success" name="registerbutton">
                                 Đăng kí
                             </button>
-                            <!--<div class="fb-comments" data-href="http://betez.ml" data-colorscheme="light" data-numposts="5" data-width="500"></div>-->
+                            <!--<div class="fb-comments" data-href="http://localhost:8080/betez" data-colorscheme="light" data-numposts="5" data-width="500"></div>-->
 
                         </div>
                     </div>
