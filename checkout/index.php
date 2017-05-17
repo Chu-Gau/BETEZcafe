@@ -198,7 +198,7 @@ rel="stylesheet">
 						Họ và tên
 					</label>
 					<input type="text" class="form-control" name="name" value="<?php
-                    $loggedIn = false;
+                        $loggedIn = false;
                         if(isset($_SESSION['userid'])){
                             $query = "SELECT * FROM `users` WHERE `userid` = ".$_SESSION['userid'];
                             $result= $conn->query($query);          
@@ -263,7 +263,7 @@ rel="stylesheet">
                     data:"name"+'='+name+"&phonenumber"+'='+phonenumber+"&address"+'='+address,
                     async:true,
                     success: function (data) {
-                        alert(data);//
+                        // alert(data);//
                         alert('Thanh toán thành công! Chúng tôi sẽ giao hàng cho bạn nhanh nhất có thể. Cám ơn đã sử dụng dịch vụ của chúng tôi :) !');
                         window.location.replace("../");
                     }
