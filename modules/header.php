@@ -24,14 +24,14 @@
                                 <li><a href="http://betezcafe.tk/betez">Home</a></li>
                                 <li><a href="http://betezcafe.tk/betez#menu">Menu</a></li>
                                 <li><a href="http://betezcafe.tk/betez/khuyen_mai">Khuyến mãi</a></li>
-                                <li><a href="http://betezcafe.tk/betez/inffo">Liên hệ</a></li>
+                                <li><a href="http://betezcafe.tk/betez/info">Liên hệ</a></li>
                             </ul>
                             <?php
                                  if(!isset($_SESSION['username'])){
                             ?>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="http://betezcafe.tk/betez/register"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
-                                <li><a id = "Login" href="http://betezcafe.tk/betez/loggin"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+                                <li><a id = "Login" href="http://betezcafe.tk/betez/login"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
                             </ul>
                             <?php
                                  }
