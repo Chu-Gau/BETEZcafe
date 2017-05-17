@@ -70,7 +70,7 @@ rel="stylesheet">
 <div id="main">
     <div class="row">
         <!-- <div class="col-md-10">
-            <a class="navbar-brand" href="http://betezcafe.tk/betez/"><img src="http://i.imgur.com/j8hndhf.png" width="100px" height="100px"></a>
+            <a class="navbar-brand" href="http://betezcafe.tk/"><img src="http://i.imgur.com/j8hndhf.png" width="100px" height="100px"></a>
         </div> -->
         <div class="col-md2 user">
         </div>

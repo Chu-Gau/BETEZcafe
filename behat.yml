@@ -2,6 +2,6 @@
 default:
     extensions:
         Behat\MinkExtension\Extension:
-            base_url: http://betezcafe.tk/betez
+            base_url: http://betezcafe.tk
             goutte: ~
             selenium2: ~
