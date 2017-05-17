@@ -1,6 +1,6 @@
 <?php
     // Create connection
-    $conn = mysqli_connect('localhost', 'root', '', 'betez');
+    $conn = mysqli_connect('localhost', 'u160141961_root', 'teamchugau1997', 'u160141961_betez');
 
     // Check connection
     if (!$conn) {
