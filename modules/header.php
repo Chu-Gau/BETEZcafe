@@ -18,20 +18,20 @@
                     <nav class="navbar navbar-inverse">
                         <div class="container-fluid">
                             <div class="navbar-header">
-                                <a class="navbar-brand" href="http://localhost:8080/betez">BETEZ Café</a>
+                                <a class="navbar-brand" href="http://betezcafe.tk/betez">BETEZ Café</a>
                             </div>
                             <ul class="nav navbar-nav">
-                                <li><a href="http://localhost:8080/betez">Home</a></li>
-                                <li><a href="http://localhost:8080/betez#menu">Menu</a></li>
-                                <li><a href="http://localhost:8080/betez/khuyen_mai">Khuyến mãi</a></li>
-                                <li><a href="http://localhost:8080/betez/info">Liên hệ</a></li>
+                                <li><a href="http://betezcafe.tk/betez">Home</a></li>
+                                <li><a href="http://betezcafe.tk/betez#menu">Menu</a></li>
+                                <li><a href="http://betezcafe.tk/betez/khuyen_mai">Khuyến mãi</a></li>
+                                <li><a href="http://betezcafe.tk/betez/inffo">Liên hệ</a></li>
                             </ul>
                             <?php
                                  if(!isset($_SESSION['username'])){
                             ?>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="http://localhost:8080/betez/register"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
-                                <li><a id = "Login" href="http://localhost:8080/betez/login"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+                                <li><a href="http://betezcafe.tk/betez/register"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
+                                <li><a id = "Login" href="http://betezcafe.tk/betez/loggin"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
                             </ul>
                             <?php
                                  }
@@ -40,7 +40,7 @@
             ?>
             <ul class="nav navbar-nav navbar-right">
                 <li class='name'>Xin chào <span ><a href='#'><?php echo $_SESSION['username'] ?></a></span></li>
-                <li><a href="http://localhost:8080/betez/app/signout.php"><span class="glyphicon glyphicon-log-in"></span> Đăng xuất</a></li>
+                <li><a href="http://betezcafe.tk/betez/app/signout.php"><span class="glyphicon glyphicon-log-in"></span> Đăng xuất</a></li>
             </ul>
             <?php
                                  }                 

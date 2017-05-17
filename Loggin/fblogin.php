@@ -3,7 +3,7 @@
     
     $app_id = "536643483177466";
     $app_secret = "7078d44516ff407d08dde78934b20eb6";
-    $redirect_uri = urlencode("http://localhost:8080/betez/login/fblogin.php");    // phải sửa lại link này
+    $redirect_uri = urlencode("http://betezcafe.tk/betez/login/fblogin.php");    // phải sửa lại link này
     
     // Get code value
     $code = $_GET['code'];
